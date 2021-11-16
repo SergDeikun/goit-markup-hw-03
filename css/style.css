@@ -12,18 +12,19 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 img {
     display: block;
 }
+
 .container {
     width: 1200px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
     outline: 2px solid tomato;
 }
 
@@ -48,6 +49,8 @@ body {
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
+    width: 1600px;
+    margin:0 auto;
 }
 
 .header-list {
@@ -150,8 +153,8 @@ body {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    
-    
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -191,8 +194,9 @@ body {
 
                 /* ABOUT*/
 
-.about {
+.abot-container {
     display: flex;
+    margin: 0 auto;
 }
 
 .about-list {
@@ -235,6 +239,7 @@ body {
 .content-list {
     display: flex;
 }
+
 .content-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -252,11 +257,13 @@ body {
 
     .team {
         background: var(--background-team-color);
+        
 }
 
 .team-container {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 94px; 
+    margin: 0 auto;
 }  
 
 .team-list {
@@ -307,9 +314,10 @@ body {
 
     /* FOOTER */
 
-    .footer-container{
-        padding-top: 94px;
-        padding-bottom: 94px;
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
     } 
 
 
@@ -352,6 +360,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
 }
 
     .footer-link-mail:hover,
@@ -382,10 +391,12 @@ body {
 }
     .portfolio-btn:not(:last-child) {
     margin-right: 8px; 
+    
 }
 
     .portfolio-btn {
-        font-family: inherit;
+    display: flex;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -393,7 +404,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--portfolio-btn-color);
     padding: 6px 22px 6px 22px;
-    border: none;
+    border: none; 
 }
 
     .portfolio-btn:hover,
