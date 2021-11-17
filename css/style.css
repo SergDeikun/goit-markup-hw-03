@@ -18,6 +18,8 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -29,7 +31,7 @@ img {
 
 .section {
     padding-top: 94px;
-    padding-bottom: ; 94px;
+    padding-bottom: 94px;
 }
 
 body {
@@ -145,15 +147,15 @@ body {
     margin-right: 50px;
 }
 
-                /* HERO */
+/* HERO */
 
 .hero {
     background: var(--background-heroe-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -192,7 +194,7 @@ body {
 .hero-btn:hover
 .hero-btn:focus
 
-                /* ABOUT*/
+/* ABOUT*/
 
 .abot-container {
     display: flex;
@@ -224,11 +226,11 @@ body {
     color: var(--main-text-color);
 }
 
-                /* CONTENT*/
+/* CONTENT*/
 
-.content-conteiner {
-    margin: 0 auto;
-}
+.content {
+    padding-bottom: 94px;
+} 
 
 .content-list {
     display: flex;
@@ -248,24 +250,16 @@ body {
     margin-bottom: 50px;
 }
 
-                /* TEAM */
+/* TEAM */
 
 .team {
-        background: var(--background-team-color);
-        
+    background: var(--background-team-color);
 }
-
-.team-container {
-    padding-top: 94px;
-    padding-bottom: 94px; 
-    margin: 0 auto;
-}  
 
 .team-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;
 }
 
 .team-title {
@@ -281,7 +275,13 @@ body {
 .team-item {
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin-left: 30px;
-    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; 
+}
+
+.team-item:first-child {
+    margin-left: 0;
 }
 
 .team-item-title {
@@ -309,7 +309,7 @@ body {
 
     /* FOOTER */
 
-    .footer-container {
+    .footer {
     padding-bottom: 60px;
     padding-top: 60px;
     }
@@ -347,6 +347,14 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF; 
     margin-bottom: 9px;
+}
+
+.adress-list-item {
+    margin-bottom: 9px;
+}
+
+.adress-list-item:last-child {
+    margin-bottom: 0;
 }
 
 .footer-link-mail {
