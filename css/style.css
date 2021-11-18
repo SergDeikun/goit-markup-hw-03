@@ -274,7 +274,7 @@ body {
 .team-item {
     flex-basis: calc((100% - 90px) / 4); 
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; 
@@ -429,11 +429,10 @@ body {
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 60px ) / 3);
+    flex-basis: calc((100% - 90px ) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #eeeeee;
-    
+    border: 1px solid #EEEEEE
 }
 
 .portfolio-item:nth-last-child(-n + 3) { 
@@ -441,15 +440,25 @@ margin-bottom: 0;
 } 
 
 .portfolio-item:nth-child(3n + 3) {
-    margin-right: 0; 
+    margin-right: 0;  
 } 
 
 .portfolio-item-botton {
-    padding-top: 20px;
-    padding-bottom: 20px;  
+    padding: 20px 24px 20px 24px;
+    
+}
+
+.link-portfolio-item {
+    display: block;
+}
+
+.link-portfolio-item:hover,
+.link-portfolio-item:focus {
+    background: none;
 }
 
 .portfolio-item-title {
+    font-family: inherit;
     font-weight: bold;
     font-size: 18px;
     line-height: 2; 
